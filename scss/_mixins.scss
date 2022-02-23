@@ -3,3 +3,31 @@
   margin: 0;
   list-style: none;
 }
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+}
+@mixin link($link-color) {
+  text-decoration: none;
+  color: $link-color;
+}
+@mixin btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@mixin p-absolute($top,$left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}

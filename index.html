@@ -4,20 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <title>Freshio</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-
   <body>
+
+    <!-- Topheader -->
+   <div class="topheader">
+     <div class="container">
+       <div class="topheader__inner">
+        <p class="topheader__text">FREE express international delivery + EASY returns</p>
+        <ul class="topheader__list">
+          <li class="topheader__item"><a href="#" class="topheader__link">about</a></li>
+          <li class="topheader__item"><a href="#" class="topheader__link">faq</a></li>
+          <li class="topheader__item"><a href="#" class="topheader__link">contact us</a></li>
+        </ul>
+       </div> 
+     </div>
+   </div>
+
+   <!-- Main Content -->
+
+   <div class="content">
+
+      <!-- Header -->
+
+      <header class="site-header header">
+        <div class="container">
+          <div class="header__inner">
+            <button class="menu-btn"><i class='bx bx-menu'></i></button>
+            <a href="#" class="header__logobox">
+              <img class="header__logo" src="images/logo.jpeg" alt="ogo">
+            </a>
+            <div class="header__search search">
+              <span class="search__icon"><i class="fal fa-search"></i></span>
+              <input type="text" class="header__input" placeholder="Enter Keyword...">
+              <button class="search__btn">Search</button>
+            </div>
+            <div class="header__btns">
+              <button class="header__btn header__btn--user"> <i class="fal fa-user-alt"></i></button>
+              <button class="header__btn header__btn--heart"><i class="fal fa-heart"></i>
+                <span>o</span>
+              </button>
+              <button class="header__btn header__btn--shop"><i class="fal fa-shopping-basket"></i>
+                <span>o</span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navbar -->
+
+      <nav class="site-nav nav">
+        <div class="container">
+          <div class="nav__inner">
+            <button class="nav__btn"> <span><i class='bx bx-menu'></i></span> Shop by Department </button>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Home <i class='bx bx-chevron-down' ></i></a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Shop <i class='bx bx-chevron-down' ></i></a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Pages <i class='bx bx-chevron-down' ></i></a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+   </div>
     <script src="js/main.js"></script>
   </body>
 </html>
