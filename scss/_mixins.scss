@@ -31,3 +31,7 @@
   top: $top;
   left: $left;
 }
+@mixin bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
