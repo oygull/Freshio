@@ -1633,12 +1633,11 @@ img {
 }
 
 .products__list {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 100%;
-  max-width: 1200px;
-  overflow: scroll;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1762,6 +1761,7 @@ img {
 
 .product__content {
   position: relative;
+  width: 100%;
 }
 
 .product__controls--prevs {

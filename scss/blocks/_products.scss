@@ -87,10 +87,9 @@
     }
 }
 .products__list{
-  @include list-unstyled();
   width: 100%;
-  max-width: 1200px;
-  overflow: scroll;
+  @include list-unstyled();
+  overflow: hidden;
   display: flex;
   margin-bottom: 30px;
 }
@@ -144,6 +143,7 @@
 }
 .product__content{
   position: relative;
+  width: 100%;
 }
 .product__controls--prevs{
   position: absolute;
