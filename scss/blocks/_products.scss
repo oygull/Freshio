@@ -282,6 +282,9 @@
     width: 100%;
     max-width: 500px;
   }
+  .types__desc{
+    align-items: flex-start;
+  }
 }
 @media screen and(max-width:400px){
   .products__list{
