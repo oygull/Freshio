@@ -1,3 +1,4 @@
+
 var navBtn = document.getElementById('navBtn');
 var department = document.getElementById('departmentBox');
 var sidebarBtn = document.getElementById('sidebarBtn');
@@ -40,3 +41,4 @@ pagesLink.addEventListener('click', function(){
 closeSidebarInner3.addEventListener('click', function(){
   sidebarInner3.classList.remove('show-sidebar');
 });
+

@@ -49,7 +49,7 @@
               <button class="search__btn">Search</button>
             </div>
             <div class="header__btns">
-              <button class="header__btn header__btn--user"> <i class="fal fa-user-alt"></i></button>
+              <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="header__btn header__btn--user"> <i class="fal fa-user-alt"></i></button>
               <button class="header__btn header__btn--heart"><i class="fal fa-heart"></i>
                 <span>o</span>
               </button>
@@ -211,7 +211,269 @@
           </ul>
         </section>
       </nav>
+     <!-- Hero -->
+     <section class="site-hero hero">
+      <div class="container">
+        <div class="hero__inner row">
+          <div class="hero__slider col-xs-12 col-lg-8">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/hero-slide1.jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption  d-xs-block">
+                    <p class="hero__par">Fresh and Tasty</p>
+                    <h3 class="hero__title">Farm Market Organic Shop</h3>
+                    <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/hero-slide2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-xs-block">
+                    <p class="hero__par">Fresh and Tasty</p>
+                    <h3 class="hero__title">Farm Market  Organic Shop</h3>
+                    <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="control__btns">
+                <button class="prevs" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span><i class='bx bx-left-arrow-alt' ></i></span>
+                </button>
+                <button class="next"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span><i class='bx bx-right-arrow-alt'></i></span>
+                </button>
+              </div>
+            
+            </div>
+          </div>
+          <div class="hero__content col-xs-12 col-lg-4">
+            <div class="hero__box">
+              <h3 class="hero__subheading">
+                Discover <br> Real Organic <br> Flavors
+              </h3>
+              <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
+            </div>
+            <div class="hero__discount">
+              <p class="discount_par">Summer Sale</p>
+              <h3 class="discount__title">50 % Off</h3>
+              <p class="discount__text">Vitamins, Supplements and Herbs</p>
+              <a href="#" class="discount__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Products -->
+
+    <section class="products">
+      <div class="container">
+        <ul class="types__list row">
+          <li class="types__item col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/service1.webp" alt="service-img" class="types__img">
+            <div class="types__desc">
+              <h3 class="types__title">Curated Products</h3>
+              <p class="types__text">from Handpicked Sellers</p>
+            </div>
+          </li>
+          <li class="types__item col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/service2.webp" alt="service-img" class="types__img">
+            <div class="types__desc">
+              <h3 class="types__title">Handmade</h3>
+              <p class="types__text">Made with passion by 300+ curators across the country.</p>
+            </div>
+          </li>
+          <li class="types__item col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/service3.webp" alt="service-img" class="types__img">
+            <div class="types__desc">
+              <h3 class="types__title">100% Natural</h3>
+              <p class="types__text">Eat local, consume local, closer to nature.</p>
+            </div>
+          </li>
+          <li class="types__item col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/service4.webp" alt="service-img" class="types__img">
+            <div class="types__desc">
+              <h3 class="types__title">Shipping</h3>
+              <p class="types__text">Across West & East India</p>
+            </div>
+          </li>
+        </ul>
+        <div class="product__inner">
+          <div class="products__header">
+            <h3 class="products__title">Featured Products</h3>
+            <a href="#" class="products__link">Shop All <span><i class='bx bx-chevrons-right' ></i></span></a>
+          </div>
+          <div class="product__content">
+            <ul id="productList" class="products__list">
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img1.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img2.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img3.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img4.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img5.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img6.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img7.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img8.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img9.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product__imgbox">
+                  <img src="images/product-img10.jpeg" alt="product-img">
+                  <div class="product__btns">
+                    <button class="product__btn"><i class='bx bx-show' ></i></button>
+                    <button class="product__btn"><i class='bx bx-heart' ></i></button>
+                    <button class="product__btn"><i class='bx bx-repost' ></i></button>
+                  </div>
+                </div>
+                <div class="product__desc">
+                  <a href="#">Home</a>
+                  <p class="product__text">Pamela's Products Artisan Blend Flour Gluten Free</p>
+                  <p class="product__price">$15.00</p>
+                  <button class="btn product__btn">Add to cart <span><i class='bx bx-chevrons-right'></i></span></button>
+                </div>
+              </li>
+            </ul>
+              <button id="nextBtn" class="product__controls--next next"><i class='bx bx-right-arrow-alt' ></i></button>
+              <button class="product__controls--prevs prevs"><i class='bx bx-left-arrow-alt' ></i></button>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+   </div>
       <!-- SideBar -->
 
       <section id="sidebar" class="sidebar">
@@ -266,58 +528,87 @@
           <li class="sidebar__item"><img src="images/hoverbox-img4.jpg" alt="hoverbox-img"></li>
         </ul>
       </section>
-      <!-- Hero -->
-      <section class="site-hero hero">
-        <div class="container">
-          <div class="hero__inner row">
-            <div class="hero__slider col-xs-12 col-lg-8">
-              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/hero-slide1.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption  d-xs-block">
-                      <p class="hero__par">Fresh and Tasty</p>
-                      <h3 class="hero__title">Farm Market Organic Shop</h3>
-                      <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/hero-slide2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-xs-block">
-                      <p class="hero__par">Fresh and Tasty</p>
-                      <h3 class="hero__title">Farm Market  Organic Shop</h3>
-                      <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="control__btns">
-                  <button class="prevs" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span><i class='bx bx-left-arrow-alt' ></i></span>
-                  </button>
-                  <button class="next"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span><i class='bx bx-right-arrow-alt'></i></span>
-                  </button>
-                </div>
-              
-              </div>
+
+      <!-- User Modal -->
+  
+      <div class="offcanvas user-modal offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+         <a href="#" class="canvas__logo">
+           <img src="images/logo.jpeg" alt="logo">
+         </a>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a href="" class="user__link"> Existing Account Login </a>
+          <form class="modal__form">
+            <input type="email" class="modal__input" placeholder="Email Adress" required>
+            <input type="password" class="modal__input" placeholder="Password" required>
+            <div class="form__inner">
+            
+              <label class="form__label" for="password">  <input id="password" class="modal__check" type="checkbox">Remember Me</label>
+              <a href="#" class="form__link">Forget Password</a>
             </div>
-            <div class="hero__content col-xs-12 col-lg-4">
-              <div class="hero__box">
-                <h3 class="hero__subheading">
-                  Discover <br> Real Organic <br> Flavors
-                </h3>
-                <a href="#" class="hero__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
-              </div>
-              <div class="hero__discount">
-                <p class="discount_par">Summer Sale</p>
-                <h3 class="discount__title">50 % Off</h3>
-                <p class="discount__text">Vitamins, Supplements and Herbs</p>
-                <a href="#" class="discount__link">Shop Now <i class='bx bx-chevrons-right' ></i></a>
-              </div>
+            <button type="submit" class="form__btn">Login</button>
+          </form>
+          <a href="" class="user__link"> Connect with Social Networks </a>
+          <ul class="socials__list">
+            <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-facebook'></i></a></li>
+            <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-google' ></i></a></li>
+            <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-twitter' ></i></a></li>
+          </ul>
+          <a href="" class="user__link"> New Account Register</a>
+          <form class="modal__form">
+            <input type="text" class="modal__input" placeholder="First Name" required>
+            <input type="text" class="modal__input" placeholder="Last Name" required>
+            <input type="email" class="modal__input" placeholder="Email Adress" required>
+            <input type="password" class="modal__input" placeholder="Password" required>
+            <div class="form__inner">
+              <label class="form__label" for="terms"> <input id="terms" class="terms" type="checkbox"> I agree to the terms.</label>
+  
             </div>
+            <button type="submit" class="form__btn">Create an Account</button>
+          </form>
+          <div class="modal__footer">
+            <div class="languages">
+              <h4 class="languages__title">Languages</h4>
+              <ul class="languages__list">
+                <li class="languages__item">
+                  <img src="images/flag1.jpeg" alt="flag">
+                </li>
+                <li class="languages__item">
+                  <img src="images/flag2.jpeg" alt="flag">
+                </li>
+                <li class="languages__item">
+                  <img src="images/flag3.jpeg" alt="flag">
+                </li>
+                <li class="languages__item">
+                  <img src="images/flag4.jpeg" alt="flag">
+                </li>
+                <li class="languages__item">
+                  <img src="images/flag5.jpeg" alt="flag">
+                </li>
+                <li class="languages__item">
+                  <img src="images/flag6.jpeg" alt="flag">
+                </li>
+              </ul>
+              <h4 class="languages__title">Currency</h4>
+              <ul class="currency__list">
+                <li class="currency__item">EUR</li>
+                <li class="currency__item">USD</li>
+              </ul>
+            </div>
+            <ul class="modal__list">
+              <li class="modal__item"><a href="#" class="modal__link"> <span><i class='bx bx-arrow-from-left' ></i></span> Sign in </a></li>
+              <li class="modal__item"><a href="#" class="modal__link"><span><i class='bx bx-user' ></i></span>My account </a></li>
+              <li class="modal__item"><a href="#" class="modal__link"><span><i class='bx bx-heart' ></i></span> Whishlist (0)</a></li>
+              <li class="modal__item"><a href="#" class="modal__link"> <span><i class='bx bx-copy' ></i></span> Compare (0)</a></li>
+              <li class="modal__item"><a href="#" class="modal__link"> <span><i class='bx bx-check-square' ></i></span> Checkout</a></li>
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+ 
+    
     <script src="js/main.js"></script>
   </body>
 </html>

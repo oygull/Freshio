@@ -1,0 +1,23 @@
+.btn{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  @include flex-center();
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: $main-font;
+  transition: all 0.4s ease;
+
+    span{
+      margin-left: 2px;
+      @include flex-center();
+      transition: transform 0.4s ease;
+    }
+    &:hover{
+      color: $secondary-color;
+      span{
+        transform: translate(4px,0);
+      }
+    }
+}
