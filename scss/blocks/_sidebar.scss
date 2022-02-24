@@ -43,13 +43,14 @@
   transition: all 0.2s ease;
   font-size: 14px;
   line-height: 16px;
+  height: 48px;
       span{
-        padding: 0 20px;
+        
         border-left: 1px solid #073521;
       }
 }
 .sidebar__item{
-  padding: 15px 0 15px 15px;
+  padding-left: 15px;
   border-bottom: 1px solid #073521;
     &:nth-child(1){
       border-top: 1px solid #073521;

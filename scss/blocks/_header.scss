@@ -317,6 +317,13 @@
       transition: all 0.4s ease;
     }
 }
+.sidebar__item{
+  span{
+    height: 48px;
+    width: 48px;
+    @include flex-center();
+  }
+}
 .department__hoverbox{
   @include p-absolute(0,240px);
   @include list-unstyled();

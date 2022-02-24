@@ -717,6 +717,20 @@ img {
   transition: all 0.4s ease;
 }
 
+.sidebar__item span {
+  height: 48px;
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .department__hoverbox {
   position: absolute;
   top: 0;
@@ -872,15 +886,15 @@ img {
   transition: all 0.2s ease;
   font-size: 14px;
   line-height: 16px;
+  height: 48px;
 }
 
 .sidebar__link span {
-  padding: 0 20px;
   border-left: 1px solid #073521;
 }
 
 .sidebar__item {
-  padding: 15px 0 15px 15px;
+  padding-left: 15px;
   border-bottom: 1px solid #073521;
 }
 
