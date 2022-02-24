@@ -39,7 +39,7 @@
       <header class="site-header header">
         <div class="container">
           <div class="header__inner">
-            <button class="menu-btn"><i class='bx bx-menu'></i></button>
+            <button id="sidebarBtn" class="menu-btn"><i class='bx bx-menu'></i></button>
             <a href="#" class="header__logobox">
               <img class="header__logo" src="images/logo.jpeg" alt="ogo">
             </a>
@@ -67,9 +67,7 @@
           <div class="nav__inner">
             <div class="btn__box">
               <button id="navBtn" class="nav__btn"> <span><i class='bx bx-menu'></i></span> Shop by Department </button>
- 
-            </div>
-           
+            </div>   
             <ul class="nav__list">
               <li class="nav__item"><a href="#" class="nav__link">Home <i class='bx bx-chevron-down' ></i></a>
                 <div class="hoverbox hoverbox__first">
@@ -146,9 +144,9 @@
               <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
             </ul>
           </div>
+          
             <!-- Department -->
   
-
         </div>
         <section id="departmentBox" class="department">
           <ul class="department__list">
@@ -214,7 +212,60 @@
         </section>
       </nav>
 
-   
+      <!-- SideBar -->
+
+      <section id="sidebar" class="sidebar">
+        <button id="closeSidebar" class="btn__close">
+          <span><i class="fal fa-times"></i></span> Close
+        </button>
+        <ul class="sidebar__list">
+          <li class="sidebar__item"><a href="#" id="homeLink" class="sidebar__link">Home <span><i class='bx bx-chevrons-right' ></i></span></a></li>
+          <li class="sidebar__item"><a href="#" id="shopLink" class="sidebar__link">Shop <span><i class='bx bx-chevrons-right' ></i></span></a></li>
+          <li class="sidebar__item"><a href="#" id="pagesLink" class="sidebar__link">Pages <span><i class='bx bx-chevrons-right' ></i></span></a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Blog</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Conatct</a></li>
+        </ul>
+      </section>
+
+      <section id="sidebarInner" class="sidebar">
+        <button id="closeSidebarInner" class="btn__close__inner">
+          <span><i class='bx bx-chevrons-left' ></i></span> Back to home
+        </button>
+        <ul class="inner__list">
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 1</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 2</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 3</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 4</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 5</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 6</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Home 7</a></li>
+        </ul>
+      </section>
+
+      <section id="sidebarInner2" class="sidebar">
+        <button id="closeSidebarInner2" class="btn__close__inner">
+          <span><i class='bx bx-chevrons-left' ></i></span> Back to home
+        </button>
+        <ul class="inner__list">
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Category 1</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Category 2</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Category 3</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">Category 4</a></li>
+        </ul>
+      </section>
+
+      <section id="sidebarInner3" class="sidebar">
+        <button id="closeSidebarInner3" class="btn__close__inner">
+          <span><i class='bx bx-chevrons-left' ></i></span> Back to home
+        </button>
+        <ul class="inner__list">
+          <li class="sidebar__item"><img src="images/hoverbox-img1.jpg" alt="hoverbox-img"></li>
+          <li class="sidebar__item"><img src="images/hoverbox-img1.jpg" alt="hoverbox-img"></li>
+          <li class="sidebar__item"><img src="images/hoverbox-img2.jpg" alt="hoverbox-img"></li>
+          <li class="sidebar__item"><img src="images/hoverbox-img3.jpg" alt="hoverbox-img"></li>
+          <li class="sidebar__item"><img src="images/hoverbox-img4.jpg" alt="hoverbox-img"></li>
+        </ul>
+      </section>
       <!-- Hero -->
       <section class="site-hero hero">
         <div class="container">

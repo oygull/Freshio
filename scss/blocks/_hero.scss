@@ -156,6 +156,11 @@
         }
     }
 }
+@media screen and (max-width:992px) {
+  .hero__slider{
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width:768px) {
   .carousel-caption{
     padding-left: 40px;
