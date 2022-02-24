@@ -1,3 +1,6 @@
+.products{
+  overflow: hidden
+}
 .types__list{
   @include list-unstyled();
   margin: 30px 0;
@@ -88,6 +91,7 @@
 }
 .products__list{
   width: 100%;
+  max-width: 1200px;
   @include list-unstyled();
   overflow: hidden;
   display: flex;
@@ -143,7 +147,6 @@
 }
 .product__content{
   position: relative;
-  width: 100%;
 }
 .product__controls--prevs{
   position: absolute;
@@ -250,7 +253,18 @@
     transform: translate(-25%);
   }
 }
-
+@media screen and(max-width:1200px){
+  .products__list{
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+@media screen and(max-width:992px){
+  .products__list{
+    width: 100%;
+    max-width: 1000px;
+  }
+}
 @media screen and(max-width:576px){
   .types__item{
    padding-bottom: 0;
