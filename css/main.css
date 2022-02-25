@@ -1977,6 +1977,14 @@ img {
     width: 100%;
     max-width: 300px;
   }
+  .types__text {
+    text-align: start;
+  }
+  .types__desc {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .category {
@@ -2205,6 +2213,12 @@ img {
   overflow: hidden;
 }
 
+.customers__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .customers__title {
   font-size: 30px;
   font-weight: 400;
@@ -2326,8 +2340,14 @@ img {
     margin-right: 10px;
   }
   .customers__desc {
-    padding: 0;
+    padding: 30px 0;
+    width: 90%;
     margin-top: 20px;
+  }
+  .carousel-indicators {
+    position: absolute;
+    left: -370px;
+    bottom: -50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

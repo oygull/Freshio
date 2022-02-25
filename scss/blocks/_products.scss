@@ -276,7 +276,7 @@
    padding-bottom: 0;
   }
   .types__list{
-    text-align: center;
+    text-align:center;
   }
   .products__list{
     width: 100%;
@@ -290,5 +290,11 @@
   .products__list{
     width: 100%;
     max-width: 300px;
+  }
+  .types__text{
+    text-align: start;
+  }
+  .types__desc{
+    align-items: flex-start;
   }
 }
