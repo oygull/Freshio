@@ -2199,4 +2199,135 @@ img {
     display: block;
   }
 }
+
+.customers {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.customers__title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #0a472e;
+  letter-spacing: -.75px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  max-width: 370px;
+}
+
+.customers__text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.customers__link {
+  font-size: 12px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  color: #bac34e;
+  border-bottom: 1px solid #bac34e;
+}
+
+.customers__link .bx {
+  position: relative;
+  bottom: -2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-left: -2px;
+}
+
+.customers__link:hover {
+  color: #bac34e;
+}
+
+.customers__link:hover .bx {
+  -webkit-transform: translate(6px, 0);
+          transform: translate(6px, 0);
+}
+
+.customers__imgbox {
+  padding: 0 30px;
+}
+
+.customers__desc {
+  padding: 0 80px;
+}
+
+.customers__desc--quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+}
+
+.customers__desc--quote img {
+  width: 48px;
+  height: 38px;
+  margin-right: 40px;
+}
+
+.cusromer__p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.customers__item {
+  margin-bottom: 40px;
+}
+
+.customers__item:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.customers__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: -270px;
+  bottom: 0;
+}
+
+.indicatot__btn {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  background-color: grey !important;
+  margin-right: 6px !important;
+}
+
+.indicatot__btn:active {
+  background-color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .customers__desc {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    margin-bottom: 20px;
+  }
+  .customers__imgbox {
+    padding: 0;
+  }
+  .quote {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .customers__desc {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
