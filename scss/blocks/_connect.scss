@@ -5,7 +5,7 @@
   @include list-unstyled();
 }
 .connect__item{
-  padding: 0px 15px;
+  padding: 0px 30px;
 }
 .connect__box{
   border: 1px solid #e2e2e2;
@@ -78,4 +78,16 @@
 }
 .connect__btn{
   @include btn-icon();
+}
+@media screen and(max-width:768px){
+  .connect__desc{
+    text-align: center;
+  }
+  .connect__item{
+    margin-bottom: 30px;
+
+  }
+  .connect__box{
+    height: 270px;
+  }
 }

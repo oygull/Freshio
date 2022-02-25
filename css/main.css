@@ -2363,10 +2363,11 @@ img {
 .partners {
   padding: 60px 0;
   border-top: 1px solid #dddddd;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .partners__item {
+  width: 185px;
   padding: 0 30px;
   opacity: 0.5;
   -webkit-transition: all 0.2s ease;
@@ -2378,9 +2379,19 @@ img {
 }
 
 .partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 90px;
 }
 
 .connect {
@@ -2394,7 +2405,7 @@ img {
 }
 
 .connect__item {
-  padding: 0px 15px;
+  padding: 0px 30px;
 }
 
 .connect__box {
@@ -2514,5 +2525,126 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .connect__desc {
+    text-align: center;
+  }
+  .connect__item {
+    margin-bottom: 30px;
+  }
+  .connect__box {
+    height: 270px;
+  }
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer {
+  padding: 60px 0 30px 0;
+}
+
+.location__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.location__box {
+  width: 280px;
+  padding: 0 15px;
+}
+
+.footer__title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer__box {
+  width: 200px;
+  padding: 0 15px;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.payment__box {
+  width: 300px;
+  padding: 0 15px;
+}
+
+.payment__box img {
+  margin-bottom: 30px;
+}
+
+.footer__item {
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer__link:hover {
+  color: #bac34e;
+}
+
+.location__item {
+  font-size: 14px;
+  color: #555;
+}
+
+.location__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.location__item span {
+  color: #aaa;
+  line-height: 18px;
+}
+
+.footer__end {
+  padding-top: 40px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.footer__copyright span {
+  color: #bac34e;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__box,
+  .payment__box,
+  .location__box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer__list,
+  .location__list {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
