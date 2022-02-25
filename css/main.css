@@ -2880,4 +2880,13 @@ img {
 .about-hero__link:hover {
   color: #bac34e;
 }
+
+.faq {
+  padding: 60px 0;
+}
+
+.faq__title {
+  font-size: 28px;
+  color: #0a472e;
+}
 /*# sourceMappingURL=main.css.map */
