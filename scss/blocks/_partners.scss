@@ -1,0 +1,16 @@
+.partners{
+  padding: 60px 0;
+  border-top: 1px solid #dddddd;
+  margin: 50px 0;
+}
+.partners__item{
+  padding: 0 30px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+    &:hover{
+      opacity: 1;
+    }
+}
+.partners__list{
+  @include list-unstyled();
+}

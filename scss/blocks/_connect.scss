@@ -1,0 +1,81 @@
+.connect{
+  padding: 50px 0;
+}
+.connect__list{
+  @include list-unstyled();
+}
+.connect__item{
+  padding: 0px 15px;
+}
+.connect__box{
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding: 40px 0px;
+  height: 204px;
+}
+.connect__imgbox{
+  border-right: 1px solid #e2e2e2;
+  @include flex-center();
+  img{
+    width: 64px;
+    height: 64px;
+  }
+}
+.connect__title{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: $main-font;
+}
+.connect__p{
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.connect__phone{
+  @include link($secondary-color);
+  font-size: 30px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  display: inline-block;
+    &:hover{
+      color: $yellow;
+    }
+}
+.connect__mail{
+  @include link($primary-color);
+  font-size: 14px;
+  display: inline-block;
+  &:hover{
+    color: $primary-color
+  }
+}
+.connect__desc{
+  padding: 0 50px 0 30px;
+}
+.connect__text{
+  font-size: 14px;
+  color: #555;
+  line-height: 20px;
+}
+.connect__form{
+  @include flex-between();
+  height: 38px;
+  border: 1px solid #e2e2e2;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0px 10px 0px 15px;
+}
+.connect__input{
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  &::placeholder{
+    color:  #e2e2e2;
+  }
+}
+.connect__btn{
+  @include btn-icon();
+}
