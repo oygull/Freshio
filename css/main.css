@@ -1958,13 +1958,14 @@ img {
   }
   .products__item {
     height: 395px;
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
   }
   .products__item img {
     width: 100%;
     height: 100%;
   }
-  .owl-prev {
+  .prod
+.owl-prev {
     left: 10px;
   }
   .owl-next {
@@ -2383,9 +2384,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -2571,6 +2572,38 @@ img {
   margin-bottom: 30px;
 }
 
+.go-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 400;
+}
+
+.go-top .top-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #bac34e;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.go-top .top-btn:hover {
+  background-color: #0a472e;
+}
+
 .footer__box {
   width: 200px;
   padding: 0 15px;
@@ -2641,6 +2674,12 @@ img {
     text-align: center;
     margin-bottom: 40px;
   }
+  .go-top {
+    display: none;
+  }
+  .footer__end {
+    padding-bottom: 100px !important;
+  }
   .footer__list,
   .location__list {
     text-align: center;
@@ -2656,13 +2695,15 @@ img {
 
 .contenta .nav__inner {
   width: 100%;
-  margin: 6px 0;
+  margin: 0;
+  padding: 0;
 }
 
 .contenta .nav__btn {
   background-color: #bac34e;
   padding: 16px 30px;
   border-radius: 30px;
+  margin: 0;
 }
 
 .contenta .site-nav {
@@ -2830,6 +2871,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../images/about-hero.jpeg");
+  background-position: -200px  0;
 }
 
 .about-hero__list {
@@ -2967,5 +3009,95 @@ img {
   padding: 0 15px;
   color: #414141;
   font-size: 14px;
+}
+
+.contact__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact__select {
+  outline: none;
+  width: 100%;
+  height: 38px;
+  background: #ebebeb;
+  color: #aaa;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem 1rem;
+  position: relative;
+  left: -10%;
+}
+
+.contact__file {
+  width: 100%;
+  height: 38px;
+  background: #ebebeb;
+  color: #aaa;
+  position: relative;
+  left: -10%;
+  padding: 0 0 0 16px;
+  border: 1px solid #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__file .file-btn {
+  font-size: 14px;
+  width: 30%;
+  height: 38px;
+  background-color: #bac34e;
+  border: none;
+  color: #fff;
+}
+
+.contact__input {
+  outline: none;
+  width: 100%;
+  position: relative;
+  left: -10%;
+  height: 38px;
+  background: none;
+  color: #aaa;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem 1rem;
+}
+
+.contact__input--message {
+  height: 100px;
+  width: 150%;
+  left: 0%;
+  padding: 8px 16px 60px 16px;
+}
+
+.contact__btn {
+  margin-top: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: initial;
+  background: #bac34e;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #000;
+  width: 90px;
+  margin-left: auto;
+  text-align: center;
+  font-family: "Arial";
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact__btn:hover {
+  background-color: #0a472e;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

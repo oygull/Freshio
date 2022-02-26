@@ -15,8 +15,9 @@
 
 .partners__list{
   display: flex;
+
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:center;
   overflow: hidden;
   @include list-unstyled();
   height: 90px;

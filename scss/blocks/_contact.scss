@@ -50,3 +50,74 @@
   color: #414141;
   font-size: 14px;
 }
+.contact__descr{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact__select{
+  outline: none;
+  width: 100%;
+  height: 38px;
+  background: #ebebeb;
+  color: #aaa;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem 1rem;
+  position: relative;
+  left: -10%;
+}
+.contact__file{
+  width: 100%;
+  height: 38px;
+  background: #ebebeb;
+  color: #aaa;
+  position: relative;
+  left: -10%;
+  padding: 0 0 0 16px;
+  border: 1px solid #e2e2e2;
+  @include flex-between();
+    .file-btn{font-size: 14px;
+      width: 30%;
+      height: 38px;
+      background-color: $secondary-color;
+      border: none;
+      color: $white-color;
+    }
+}
+.contact__input{
+  outline: none;
+  width: 100%;
+  position: relative;
+  left: -10%;
+  height: 38px;
+  background: none;
+  color: #aaa;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem 1rem;
+    &--message{
+      height: 100px;
+      width: 150%;
+      left: 0%;
+      padding: 8px 16px 60px 16px;
+    }
+}
+.contact__btn{
+  margin-top: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: initial;
+  background: $secondary-color;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #000;
+  width: 90px;
+  margin-left: auto;
+  text-align: center;
+  font-family: $main-font;
+  border: none;
+  transition: all 0.4s ease;
+    &:hover{
+      background-color: $primary-color;
+      color: $white-color;
+    }
+}

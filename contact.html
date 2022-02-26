@@ -345,7 +345,7 @@
           </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- Contact -->
         <section class="contact">
           <div class="container">
           <div class="contact__inner row">
@@ -373,26 +373,29 @@
             <div class="contact__box col-xs-12 col-md-9">
               <form class="contact__fomr">
                 <h3 class="contact__title">Contact Us</h3>
-                <div class="row">
-                  <label class="contact__label col-xs-6" for="select">Subject</label>
-                  <select id="select col-xs-6">
+                <div class="contact__descr">
+                  <label class="contact__label col-xs-2" for="select">Subject</label>
+                  <select class="col-xs-10 contact__select" id="select ">
                     <option>Customer Service</option>
                     <option>Webmaster</option>
                   </select>
                 </div>
-              <div class="row">
-                <label for="mail" class="contact__label col-xs-6"> Email address</label>
-                <input class="contact__input col-xs-6"  type="email" name="email" id="email" placeholder="your@email.com">
+              <div class="contact__descr">
+                <label for="mail" class="contact__label col-xs-2"> Email address</label>
+                <input class="contact__input col-xs-10"  type="email" name="email" id="email" placeholder="your@email.com">
               </div>
-                <div class="row">
-                  <label for="file" class="contact__label col-xs-6"> Attachment</label>
-                  <input class="contact__input col-xs-6"  type="file" name="file" id="file" placeholder="How can we help?">
+                <div class="contact__descr">
+                  <label for="file" class="contact__label col-xs-2"> Attachment</label>
+                  <div class="contact__file">
+                    <span></span>
+                    <button class="file-btn">Choose file</button>
+                  </div>
                 </div>
-                <div class="row">
-                  <label for="meassage" class="contact__label col-xs-6"> Message </label>
-                  <input class="contact__input col-xs-6"  type="text" name="text" id="meassage" placeholder="How can we help?">
+                <div class="contact__descr">
+                  <label for="meassage" size="50" class="contact__label col-xs-1"> Message </label>
+                  <input class="contact__input contact__input--message col-xs-10"  type="text" name="text" id="meassage" placeholder="How can we help?">
                 </div>
-                
+                <button class="contact__btn">Send</button>
               </form>
             </div>
           </div>
@@ -429,13 +432,21 @@
           </div>
         </section>
 
+        <div class="go-top">
+          <a href="#" class="top-btn">
+            <i class='bx bx-chevrons-up'></i>
+          </a>
+        </div>
+        
            <!-- Footer -->
 
     <footer class="site-footer footer">
       <div class="container">
         <div class="footer__inner">
           <div class="payment__box">
-            <img src="images/logo.jpeg" alt="logo">
+            <a href="#">
+              <img src="images/logo.jpeg" alt="logo">
+            </a>
             </div>
           <div class="location__box">
             <h4 class="footer__title">STORE LOCATION</h4>

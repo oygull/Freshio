@@ -306,12 +306,13 @@
   }
   .products__item{
     height: 395px;
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
     img{
       width: 100%;
       height: 100%;
     }
   }
+  .prod
   .owl-prev{
     left: 10px;
   }
