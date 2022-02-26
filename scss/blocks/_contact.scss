@@ -1,61 +1,72 @@
-.contact{
+.contact {
   padding: 60px 0;
 }
-.contact__list{
+
+.contact__list {
   @include list-unstyled();
- display: flex;
+  display: flex;
   flex-direction: column;
 }
-.contact__title{
+
+.contact__title {
   text-transform: uppercase;
   color: #414141;
   margin-bottom: 2rem;
   font-size: 18px;
 }
-.contact__item{
+
+.contact__item {
   padding: 10px 0;
   display: flex;
   align-items: center;
-   span{
-     color: #878787;
-     font-size: 40px;
-     margin-right: 10px;
-   }
-   &:nth-child(2){
-     border-top: 1px solid #eaeaea;
-   }
+
+  span {
+    color: #878787;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+  &:nth-child(2) {
+    border-top: 1px solid #eaeaea;
+  }
 }
-.contact__p{
+
+.contact__p {
   font-size: 13px;
   color: #414141;
   margin-bottom: 2px;
 }
-.contact__mail{
+
+.contact__mail {
   @include link(#414141);
   font-size: 13px;
   display: inline-block;
 }
-.contact__box{
+
+.contact__box {
   padding: 0 50px;
 }
-.contact__fomr{
+
+.contact__fomr {
   border: 1px solid #eaeaea;
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
 }
-.contact__label{
+
+.contact__label {
   width: 100%;
   padding: 0 15px;
   color: #414141;
   font-size: 14px;
 }
-.contact__descr{
+
+.contact__descr {
   display: flex;
   margin-bottom: 20px;
 }
 
-.contact__select{
+.contact__select {
   outline: none;
   width: 100%;
   height: 38px;
@@ -66,7 +77,8 @@
   position: relative;
   left: -10%;
 }
-.contact__file{
+
+.contact__file {
   width: 100%;
   height: 38px;
   background: #ebebeb;
@@ -76,15 +88,18 @@
   padding: 0 0 0 16px;
   border: 1px solid #e2e2e2;
   @include flex-between();
-    .file-btn{font-size: 14px;
-      width: 30%;
-      height: 38px;
-      background-color: $secondary-color;
-      border: none;
-      color: $white-color;
-    }
+
+  .file-btn {
+    font-size: 14px;
+    width: 30%;
+    height: 38px;
+    background-color: $secondary-color;
+    border: none;
+    color: $white-color;
+  }
 }
-.contact__input{
+
+.contact__input {
   outline: none;
   width: 100%;
   position: relative;
@@ -94,14 +109,16 @@
   color: #aaa;
   border: 1px solid #e2e2e2;
   padding: 0.5rem 1rem;
-    &--message{
-      height: 100px;
-      width: 150%;
-      left: 0%;
-      padding: 8px 16px 60px 16px;
-    }
+
+  &--message {
+    height: 100px;
+    width: 150%;
+    left: 0%;
+    padding: 8px 16px 60px 16px;
+  }
 }
-.contact__btn{
+
+.contact__btn {
   margin-top: 30px;
   font-size: 12px;
   font-weight: 700;
@@ -116,8 +133,9 @@
   font-family: $main-font;
   border: none;
   transition: all 0.4s ease;
-    &:hover{
-      background-color: $primary-color;
-      color: $white-color;
-    }
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white-color;
+  }
 }

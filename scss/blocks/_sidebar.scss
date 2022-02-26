@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   left: -100%;
@@ -8,8 +8,8 @@
   z-index: 200;
   transition: all 0.4s ease;
   overflow-y: scroll;
-  
-  .btn__close{
+
+  .btn__close {
     position: absolute;
     right: 0;
     top: 0;
@@ -20,48 +20,58 @@
     color: $yellow;
     background-color: transparent;
     border: none;
-    span{
+
+    span {
       margin-right: 4px;
     }
   }
 }
-.show-sidebar{
+
+.show-sidebar {
   left: 0;
 }
-.darken{
+
+.darken {
   background-color: rgba(0, 0, 0, 0.541);
 }
-.sidebar__list{
+
+.sidebar__list {
   margin-top: 46px;
   padding-left: 0;
   list-style: none;
   flex-direction: column;
 }
-.sidebar__link{
+
+.sidebar__link {
   @include link($white-color);
   @include flex-between();
   transition: all 0.2s ease;
   font-size: 14px;
   line-height: 16px;
   height: 48px;
-      span{
-        
-        border-left: 1px solid #073521;
-      }
+
+  span {
+
+    border-left: 1px solid #073521;
+  }
 }
-.sidebar__item{
+
+.sidebar__item {
   padding-left: 15px;
   border-bottom: 1px solid #073521;
-    &:nth-child(1){
-      border-top: 1px solid #073521;
+
+  &:nth-child(1) {
+    border-top: 1px solid #073521;
+  }
+
+  &:hover {
+    .sidebar__link {
+      color: $yellow;
     }
-    &:hover{
-      .sidebar__link{
-        color: $yellow;
-      }
-    }
+  }
 }
-.btn__close__inner{
+
+.btn__close__inner {
   width: 100%;
   padding: 15px;
   font-size: 14px;
@@ -70,75 +80,95 @@
   @include btn-icon();
   text-align: start;
   color: $white-color;
-    span{
-      margin-right: 4px;
-    }
+
+  span {
+    margin-right: 4px;
+  }
 }
-.inner__list{
+
+.inner__list {
   @include list-unstyled();
 
-    img{
-      width: 90%;
-    }
+  img {
+    width: 90%;
+  }
 }
-.user-modal{
+
+.user-modal {
   width: 300px;
-    .socials__list{
-      @include list-unstyled();
-      @include center();
-      margin-bottom: 20px;
+
+  .socials__list {
+    @include list-unstyled();
+    @include center();
+    margin-bottom: 20px;
+  }
+
+  .socials__item {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    @include flex-center();
+    transition: all 0.4s ease;
+
+    &:nth-child(1) {
+      background-color: #4c68a2;
+
+      &:hover {
+        background-color: $white-color;
+        border-color: #4c68a2;
+
+        .bx {
+          color: #4c68a2;
+        }
+      }
     }
-    .socials__item{
-      width: 40px;
-      height: 40px;
-      margin-right: 6px;
-      border-radius: 50%;
-      border: 2px solid transparent;
+
+    &:nth-child(2) {
+      background-color: #4285f4;
+
+      &:hover {
+        background-color: $white-color;
+        border-color: #4285f4;
+
+        .bx {
+          color: #4285f4;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: #53d1f8;
+
+      &:hover {
+        background-color: $white-color;
+        border-color: #53d1f8;
+
+        .bx {
+          color: #53d1f8;
+        }
+      }
+    }
+
+    .socials__link {
       @include flex-center();
-      transition: all 0.4s ease;
-      &:nth-child(1){
-        background-color: #4c68a2; 
-        &:hover{
-          background-color: $white-color;
-          border-color: #4c68a2;
-          .bx{
-            color: #4c68a2;}
-        }
-      }
-      &:nth-child(2){
-        background-color: #4285f4;
-        &:hover{
-          background-color: $white-color;
-          border-color: #4285f4;
-            .bx{
-              color:#4285f4 ;}
-        }
-      }
-        &:nth-child(3){
-          background-color: #53d1f8;
-          &:hover{
-            background-color: $white-color;
-            border-color: #53d1f8;
-             .bx{
-               color: #53d1f8;}
-          }
-        }
-        .socials__link{
-          @include flex-center();
-         @include link($white-color);
-        }
+      @include link($white-color);
     }
+  }
 }
-.user__link{
+
+.user__link {
   @include link($secondary-color);
   margin-bottom: 20px;
   display: inline-block;
 
-  &:focus{
+  &:focus {
     color: $primary-color
   }
 }
-.modal__input{
+
+.modal__input {
   border: 1px solid #e2e2e2;
   font-size: 14px;
   padding: 0.5rem 1rem;
@@ -147,31 +177,36 @@
   display: inline-block;
   outline-color: $secondary-color;
 
-    &::placeholder{
-      color: #e2e2e2;
-    }
+  &::placeholder {
+    color: #e2e2e2;
+  }
 }
-.form__label{
+
+.form__label {
   font-size: 12px;
   color: #414141;
   @include flex-center();
 }
-.modal__check{
+
+.modal__check {
   margin-right: 6px;
 }
-.form__link{
+
+.form__link {
   @include link(#555);
   font-size: 12px;
 
-    &:hover{
-      color: $primary-color
-    }
+  &:hover {
+    color: $primary-color
+  }
 }
-.form__inner{
+
+.form__inner {
   @include flex-between();
   margin-bottom: 16px;
 }
-.form__btn{
+
+.form__btn {
   cursor: pointer;
   border: none;
   background-color: $secondary-color;
@@ -184,57 +219,70 @@
   margin-bottom: 20px;
   transition: all 0.4s ease;
 
-    &:focus{
-      background-color: $primary-color;
-    }
+  &:focus {
+    background-color: $primary-color;
+  }
 }
-.terms{
+
+.terms {
   margin-right: 6px;
 }
-.modal__footer{
+
+.modal__footer {
   @include flex-between();
 }
-.languages__title{
+
+.languages__title {
   font-size: 14px;
   margin-bottom: 10px;
   color: #aaa;
 }
-.languages__list{
+
+.languages__list {
   @include list-unstyled();
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   margin-bottom: 10px;
 }
-.languages__item{
+
+.languages__item {
   margin-right: 10px;
 }
-.currency__list{
+
+.currency__list {
   @include list-unstyled();
   display: flex;
 }
-.currency__item{
+
+.currency__item {
   font-size: 13px;
   color: #aaa;
   margin-right: 6px;
-    &:nth-child(2){
-      color: $secondary-color;
-    }
+
+  &:nth-child(2) {
+    color: $secondary-color;
+  }
 }
-.languages{
+
+.languages {
   width: 50%;
   border-right: 1px solid #e2e2e2;
 }
-.modal__list{
- @include list-unstyled();
+
+.modal__list {
+  @include list-unstyled();
 }
-.modal__link{
+
+.modal__link {
   @include link(#aaa);
   font-size: 13px;
-    &:hover{
-      color: $secondary-color;
-    }
-    span{
-      margin-right: 6px;
-    }
+
+  &:hover {
+    color: $secondary-color;
+  }
+
+  span {
+    margin-right: 6px;
+  }
 }

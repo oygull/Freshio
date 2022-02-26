@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -9,28 +9,32 @@
   display: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 .navbar__list {
   width: 100%;
   @include flex-between();
   @include list-unstyled();
 }
-.navbar__item{
+
+.navbar__item {
   border-right: 1px solid #ebebeb;
   width: 25%;
 }
-.navbar__link{
+
+.navbar__link {
   @include link($primary-color);
   @include flex-center();
   flex-direction: column;
   font-size: 12px;
 
-    span{
-      @include flex-center();
-      margin-bottom: 6px;
-    }
+  span {
+    @include flex-center();
+    margin-bottom: 6px;
+  }
 }
-@media screen and(max-width:992px){
-  .navbar{
+
+@media screen and(max-width:992px) {
+  .navbar {
     display: block;
   }
 }

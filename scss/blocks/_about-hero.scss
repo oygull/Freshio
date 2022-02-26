@@ -1,27 +1,32 @@
-.about-hero{
+.about-hero {
   position: relative;
   height: 300px;
   @include bg-image();
   background-image: url('../../images/about-hero.jpeg');
-  background-position: -200px  0;
+  background-position: -200px 0;
 }
-.about-hero__list{
+
+.about-hero__list {
   @include list-unstyled();
   @include flex-center();
 }
-.about-hero__inner{
-  @include p-absolute(50%,10%);
-  transform: translate(0,-50%);
+
+.about-hero__inner {
+  @include p-absolute(50%, 10%);
+  transform: translate(0, -50%);
 }
-.about-hero__item{
+
+.about-hero__item {
   margin-right: 5px;
 }
-.about-hero__link{
+
+.about-hero__link {
   @include link(#555);
   font-size: 14px;
   @include flex-center();
   transition: all 0.4s ease;
-    &:hover{
-      color: $secondary-color;
-    }
+
+  &:hover {
+    color: $secondary-color;
+  }
 }

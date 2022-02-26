@@ -1,14 +1,16 @@
-.hero__inner{
+.hero__inner {
   padding: 30px 0;
 }
-.carousel-caption{
+
+.carousel-caption {
   width: 55%;
-  @include p-absolute(45%,0);
-  transform: translate(0,-50%);
+  @include p-absolute(45%, 0);
+  transform: translate(0, -50%);
   padding-left: 100px;
   text-align: start;
 }
-.hero__par{
+
+.hero__par {
   font-size: 24px;
   line-height: 24px;
   color: $yellow;
@@ -17,32 +19,38 @@
   margin-bottom: 20px;
   animation: title 1s 0s ease;
 }
-.hero__title{
+
+.hero__title {
   font-size: 40px;
   line-height: 45px;
   color: $primary-color;
   margin-bottom: 40px;
   animation: title 1s 0.2s ease;
 }
+
 @keyframes title {
-  0%{
+  0% {
     opacity: 0;
-    transform: translate(100px,0)
+    transform: translate(100px, 0)
   }
-  30%{
+
+  30% {
     opacity: 0;
-    transform: translate(90px,0)
+    transform: translate(90px, 0)
   }
-  50%{
+
+  50% {
     opacity: 0;
-    
+
   }
-  100%{
+
+  100% {
     opacity: 1;
-    transform: translate(0,0)
+    transform: translate(0, 0)
   }
 }
-.hero__link{
+
+.hero__link {
   @include link(#000);
   font-size: 12px;
   font-weight: 700;
@@ -51,36 +59,40 @@
   padding-bottom: 3px;
   animation: title 1s 0.4s ease;
 
-    &:hover{
-      color: $secondary-color;
-      border-color: $secondary-color;
-    }
-    .bx{
-      position: relative;
-      bottom: -1px;
-      margin-left: -2px;
-      transition: transform 0.4s ease;
-    }
-    &:hover .bx{
-      color: $secondary-color;
-      transform: translate(6px,0);
-    }
+  &:hover {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  .bx {
+    position: relative;
+    bottom: -1px;
+    margin-left: -2px;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover .bx {
+    color: $secondary-color;
+    transform: translate(6px, 0);
+  }
 }
-.carousel-item{
-  img{
+
+.carousel-item {
+  img {
     width: 100%;
     height: 100%;
   }
 }
 
-.control__btns{
+.control__btns {
   position: absolute;
   bottom: 30px;
   right: 40px;
   @include flex-center();
 }
+
 .next,
-.prevs{
+.prevs {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -89,53 +101,63 @@
   border: none;
   transition: all 0.4s ease;
   @include flex-center();
-    span{
-      @include flex-center();
-      font-size: 18px;
-    }
-    &:hover{
-      background-color: $secondary-color;
-      color: $white-color;
-    }
+
+  span {
+    @include flex-center();
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $white-color;
+  }
 }
-.prevs{
+
+.prevs {
   margin-right: 5px
 }
-.hero__box{
+
+.hero__box {
   height: 290px;
   background-image: url("../../images/hero-img1.jpeg");
   @include bg-image();
-  padding: 30px 40px; 
+  padding: 30px 40px;
   margin-bottom: 20px;
 }
-.hero__subheading{
+
+.hero__subheading {
   font-size: 24px;
   line-height: 30px;
   color: $primary-color;
   margin-bottom: 110px;
 }
-.hero__discount{
+
+.hero__discount {
   height: 290px;
   background-image: url('../../images/hero-img2.jpeg');
   @include flex-center();
   flex-direction: column;
 }
-.discount_par{
+
+.discount_par {
   font-size: 24px;
   font-family: $italic-font;
   color: $white-color;
   margin-bottom: 15px;
 }
-.discount__title{
+
+.discount__title {
   font-size: 40px;
   color: #f4ed23;
   margin-bottom: 10px;
 }
-.discount__text{
+
+.discount__text {
   color: $white-color;
   margin-bottom: 20px;
 }
-.discount__link{
+
+.discount__link {
   @include link($white-color);
   @include flex-center();
   font-size: 12px;
@@ -145,49 +167,60 @@
   border-radius: 30px;
   transition: all 0.4s ease;
   font-family: 'Arial';
-    .bx{
-      transition: transform 0.4s ease;
+
+  .bx {
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    background-color: $white-color;
+    color: $secondary-color;
+
+    .bx {
+      transform: translate(4px, 0);
     }
-    &:hover{
-      background-color: $white-color;
-      color: $secondary-color;
-        .bx{
-          transform: translate(4px,0);
-        }
-    }
+  }
 }
+
 @media screen and (max-width:992px) {
-  .hero__slider{
+  .hero__slider {
     margin-bottom: 20px;
   }
 }
+
 @media screen and (max-width:768px) {
-  .carousel-caption{
+  .carousel-caption {
     padding-left: 40px;
   }
 }
+
 @media screen and (max-width:576px) {
-  .carousel-caption{
+  .carousel-caption {
     padding-left: 20px;
     top: 38%;
   }
-  .hero__par{
+
+  .hero__par {
     font-size: 16px;
     margin-bottom: 10px;
   }
-  .hero__title{
+
+  .hero__title {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 15px;
   }
-  .hero__link{
+
+  .hero__link {
     font-size: 10px;
   }
-  .control__btns{
+
+  .control__btns {
     bottom: 20px;
   }
+
   .prevs,
-  .next{
+  .next {
     width: 30px;
     height: 30px;
   }

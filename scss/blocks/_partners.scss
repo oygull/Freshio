@@ -1,23 +1,25 @@
-.partners{
+.partners {
   padding: 60px 0;
   border-top: 1px solid #dddddd;
- margin-top: 50px;
+  margin-top: 50px;
 }
-.partners__item{
+
+.partners__item {
   width: 185px;
   padding: 0 30px;
   opacity: 0.5;
   transition: all 0.2s ease;
-    &:hover{
-      opacity: 1;
-    }
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.partners__list{
+.partners__list {
   display: flex;
 
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   overflow: hidden;
   @include list-unstyled();
   height: 90px;
