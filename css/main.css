@@ -2680,6 +2680,7 @@ img {
   .go-top {
     display: none;
     bottom: 80px;
+    right: 10px;
   }
   .footer__end {
     padding-bottom: 100px !important;
