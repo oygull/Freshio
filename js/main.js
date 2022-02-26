@@ -1,4 +1,3 @@
-
 var navBtn = document.getElementById('navBtn');
 var department = document.getElementById('departmentBox');
 var sidebarBtn = document.getElementById('sidebarBtn');
@@ -75,3 +74,13 @@ owl.on('mousewheel', '.owl-stage', function (e) {
     }
     e.preventDefault();
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+    document.getElementById("goTop").style.display = "block";
+  } else {
+    document.getElementById("goTop").style.display = "none";
+  }
+}

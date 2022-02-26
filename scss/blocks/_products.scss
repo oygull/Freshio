@@ -312,12 +312,14 @@
       height: 100%;
     }
   }
-  .prod
+  .types__text{
+    text-align: start;
+  }
   .owl-prev{
-    left: 10px;
+    left: 8px;
   }
   .owl-next{
-    right: 10px;}
+    right: 8px;}
 }
 @media screen and(max-width:576px){
  .product__item{
@@ -329,5 +331,4 @@
   .types__desc{
     align-items: flex-start;
   }
-
 }
